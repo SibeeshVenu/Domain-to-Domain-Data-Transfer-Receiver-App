@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Cross Domain Data Sharing Receiver - Sibeesh Passion</title>
+    <script src="Scripts/jquery-2.2.0.min.js"></script>
+    <script>
+        $(window).load(function () {
+            window.addEventListener('message', addData);
+            function addData(e) {
+                document.cookie = "myData=" + e.data;
+            };
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
